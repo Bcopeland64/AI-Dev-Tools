@@ -1,0 +1,120 @@
+{
+  "beginner": [
+    {
+      "id": "b1",
+      "title": "Hello World",
+      "content": "Welcome to Python! The print function is used to output text to the console. In Python, strings (text) must be enclosed in single (') or double (\") quotes.",
+      "example": "print('Hello, World!')",
+      "hints": [
+        "Use the print() function.",
+        "Make sure your text is inside quotes.",
+        "Python is case-sensitive."
+      ]
+    },
+    {
+      "id": "b2",
+      "title": "Variables",
+      "content": "Variables are containers for storing data values. Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.",
+      "example": "x = 5\ny = 'John'\nprint(x)\nprint(y)",
+      "hints": [
+        "Use '=' to assign values.",
+        "Variable names are case-sensitive."
+      ]
+    },
+    {
+      "id": "b3",
+      "title": "Data Types",
+      "content": "Python has built-in data types like integers, floats, strings, and booleans. You can check the type of a variable using the type() function.",
+      "example": "x = 5\ny = 3.14\nz = 'Hello'\nprint(type(x))\nprint(type(y))\nprint(type(z))",
+      "hints": [
+        "int is for whole numbers.",
+        "float is for decimal numbers.",
+        "str is for text."
+      ]
+    },
+    {
+      "id": "b4",
+      "title": "If...Else",
+      "content": "Python supports logical conditions from mathematics. These can be used in 'if' statements.",
+      "example": "a = 33\nb = 200\nif b > a:\n  print('b is greater than a')",
+      "hints": [
+        "Indentation is crucial in Python.",
+        "Use ':' at the end of the if statement."
+      ]
+    },
+    {
+      "id": "b5",
+      "title": "While Loops",
+      "content": "With the while loop we can execute a set of statements as long as a condition is true.",
+      "example": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1",
+      "hints": [
+        "Don't forget to increment the counter, or the loop will run forever!",
+        "Use '+=' for incrementing."
+      ]
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "i1",
+      "title": "Lists",
+      "content": "Lists are used to store multiple items in a single variable. Lists are ordered, changeable, and allow duplicate values.",
+      "example": "fruits = ['apple', 'banana', 'cherry']\nprint(fruits[0])\nfruits.append('orange')\nprint(fruits)",
+      "hints": [
+        "Use square brackets [].",
+        "Index starts at 0."
+      ]
+    },
+    {
+      "id": "i2",
+      "title": "Dictionaries",
+      "content": "Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered, changeable and does not allow duplicates.",
+      "example": "thisdict = {\n  'brand': 'Ford',\n  'model': 'Mustang',\n  'year': 1964\n}\nprint(thisdict['brand'])",
+      "hints": [
+        "Use curly braces {}.",
+        "Access items by key name."
+      ]
+    },
+    {
+      "id": "i3",
+      "title": "Functions",
+      "content": "A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function.",
+      "example": "def my_function(fname):\n  print(fname + ' Refsnes')\n\nmy_function('Emil')",
+      "hints": [
+        "Use 'def' keyword.",
+        "Indentation defines the function body."
+      ]
+    }
+  ],
+  "advanced": [
+    {
+      "id": "a1",
+      "title": "List Comprehensions",
+      "content": "List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.",
+      "example": "fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']\nnewlist = [x for x in fruits if 'a' in x]\nprint(newlist)",
+      "hints": [
+        "Syntax: [expression for item in iterable if condition]",
+        "More pythonic than loops."
+      ]
+    },
+    {
+      "id": "a2",
+      "title": "Lambda Functions",
+      "content": "A lambda function is a small anonymous function. A lambda function can take any number of arguments, but can only have one expression.",
+      "example": "x = lambda a : a + 10\nprint(x(5))",
+      "hints": [
+        "Use 'lambda' keyword.",
+        "Useful for short, throwaway functions."
+      ]
+    },
+    {
+      "id": "a3",
+      "title": "Classes and Objects",
+      "content": "Python is an object oriented programming language. Almost everything in Python is an object, with its properties and methods.",
+      "example": "class Person:\n  def __init__(self, name, age):\n    self.name = name\n    self.age = age\n\np1 = Person('John', 36)\nprint(p1.name)",
+      "hints": [
+        "Use 'class' keyword.",
+        "__init__ is the constructor."
+      ]
+    }
+  ]
+}
