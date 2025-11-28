@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-def execute_code(code, timeout=2):
+def execute_code(code, timeout=10):
     """
     Executes the provided Python code in a separate process.
     Returns a dictionary with 'output' and 'error'.

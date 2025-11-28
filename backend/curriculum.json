@@ -116,5 +116,115 @@
         "__init__ is the constructor."
       ]
     }
+  ],
+  "data_science": [
+    {
+      "id": "ds1",
+      "title": "NumPy Basics",
+      "content": "NumPy is the fundamental package for scientific computing in Python. It provides support for arrays, matrices, and high-level mathematical functions.",
+      "example": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr)\nprint(arr.mean())",
+      "hints": [
+        "Import numpy as np.",
+        "Use np.array() to create arrays."
+      ]
+    },
+    {
+      "id": "ds2",
+      "title": "Pandas DataFrames",
+      "content": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool.",
+      "example": "import pandas as pd\ndata = {'Name': ['Tom', 'Jerry'], 'Age': [20, 21]}\ndf = pd.DataFrame(data)\nprint(df)",
+      "hints": [
+        "Import pandas as pd.",
+        "DataFrame is the main data structure."
+      ]
+    },
+    {
+      "id": "ds3",
+      "title": "Matplotlib Visualization",
+      "content": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.",
+      "example": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\nprint('Plotting sin(x)... (Visualization not supported in text output)')",
+      "hints": [
+        "Import matplotlib.pyplot as plt.",
+        "Use plt.plot() to draw."
+      ]
+    }
+  ],
+  "machine_learning": [
+    {
+      "id": "ml1",
+      "title": "Linear Regression",
+      "content": "Linear Regression is a basic predictive analytics technique. It attempts to model the relationship between two variables by fitting a linear equation.",
+      "example": "from sklearn.linear_model import LinearRegression\nimport numpy as np\nX = np.array([[1], [2], [3], [4]])\ny = np.array([2, 4, 6, 8])\nmodel = LinearRegression()\nmodel.fit(X, y)\nprint(model.predict([[5]]))",
+      "hints": [
+        "Use sklearn.linear_model.",
+        "Reshape data if needed."
+      ]
+    },
+    {
+      "id": "ml2",
+      "title": "Model Evaluation",
+      "content": "Evaluating your model is crucial. Common metrics include Mean Squared Error (MSE) for regression and Accuracy for classification.",
+      "example": "from sklearn.metrics import mean_squared_error\ny_true = [3, -0.5, 2, 7]\ny_pred = [2.5, 0.0, 2, 8]\nprint(mean_squared_error(y_true, y_pred))",
+      "hints": [
+        "Use sklearn.metrics.",
+        "Lower MSE is better."
+      ]
+    }
+  ],
+  "nlp": [
+    {
+      "id": "nlp1",
+      "title": "Tokenization with spaCy",
+      "content": "Tokenization is the task of chopping it up into pieces, called tokens, perhaps at the same time throwing away certain characters, such as punctuation.",
+      "example": "import spacy\n# Note: Requires 'en_core_web_sm' model installed\n# nlp = spacy.load('en_core_web_sm')\nprint('spaCy installed. Load model to tokenize.')",
+      "hints": [
+        "Install spacy model first.",
+        "Use nlp() on text."
+      ]
+    },
+    {
+      "id": "nlp2",
+      "title": "Transformers",
+      "content": "Transformers are the state-of-the-art architecture for NLP. The 'transformers' library by Hugging Face provides easy access to these models.",
+      "example": "from transformers import pipeline\nprint('Transformers library imported successfully.')",
+      "hints": [
+        "Use pipeline() for high-level tasks.",
+        "Models can be large to download."
+      ]
+    }
+  ],
+  "advanced_ai": [
+    {
+      "id": "ai1",
+      "title": "RAG Systems",
+      "content": "Retrieval-Augmented Generation (RAG) combines an information retrieval component with a text generator model.",
+      "example": "print('RAG involves retrieving documents and passing them to an LLM.')",
+      "hints": [
+        "Combine retrieval with generation.",
+        "Use vector databases."
+      ]
+    },
+    {
+      "id": "ai2",
+      "title": "Knowledge Graphs",
+      "content": "A Knowledge Graph represents a network of real-world entities—i.e. objects, events, situations, or concepts—and illustrates the relationship between them.",
+      "example": "import networkx as nx\nG = nx.Graph()\nG.add_edge('Paris', 'France')\nprint(G.edges())",
+      "hints": [
+        "Nodes represent entities.",
+        "Edges represent relationships."
+      ]
+    }
+  ],
+  "deployment": [
+    {
+      "id": "dep1",
+      "title": "FastAPI",
+      "content": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.",
+      "example": "from fastapi import FastAPI\napp = FastAPI()\nprint('FastAPI app created.')",
+      "hints": [
+        "Use decorators like @app.get().",
+        "Run with uvicorn."
+      ]
+    }
   ]
 }

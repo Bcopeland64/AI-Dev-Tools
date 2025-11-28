@@ -1,2 +1,12 @@
 Flask
 flask-cors
+numpy
+pandas
+matplotlib
+scikit-learn
+torch
+transformers
+spacy
+networkx
+fastapi
+uvicorn

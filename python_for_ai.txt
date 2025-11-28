@@ -1,0 +1,644 @@
+Python for AI
+Applied NLP & Knowledge Systems: RAG, Semantic AI and Secure
+Deployment
+LevelUp Economy and Istidama Consulting are pleased to present the 16-week integrated training
+program customized to prepare learners with the technical, English language, and professional skills
+needed for today’s AI-driven workplace.
+The program brings together three strands:
+●​ Technical Track (16 weeks, ~160 hrs): From Python and data foundations through NLP, RAG
+systems, Knowledge Graphs, and deployment, leading to a Capstone project.
+●​ English for AI (16 weeks, ~80 hrs): Professional English anchored in AI, with authentic
+readings, technical reporting, and oral presentations.
+●​ Soft Skills Program (5 weeks, 20 hrs): Focused workshops on communication, teamwork,
+problem-solving, and workplace readiness.
+The delivery model is hybrid, combining synchronous and asynchronous online components with
+weekly in-person labs, workshops, and project sessions.
+
+Program Overview
+The program is structured to balance challenge with support. Learner progress will be monitored
+throughout, with weekly deliverables, project milestones, and formative assessments built into each
+track. Learners who need additional help will receive targeted support, and they will also be given
+the agency to seek help on their own through structured TA “office hours”. These office hours give
+students the chance to clarify technical or language challenges, get feedback on assignments, or ask
+for guidance on projects — ensuring no one is left behind while reinforcing responsibility for their
+own learning.
+
+Distinguishing Features
+●​ Automated Pre-Testing: All learners complete proctored entry tests in English and
+Python to establish baseline skills.
+●​ Weekly formative exercises to ensure practical application of skills covered under each
+topic.
+●​ Authentic Resources: Course content draws on real AI texts and media: Demystifying
+Artificial Intelligence, Interpretable Machine Learning, articles from WIRED and MIT
+Technology Review, and multimedia such as Talks at Google with Dr. Omar Hatamleh
+(NASA).
+●​ Capstone Project: Learners design, build, and present an end-to-end AI system in teams.
+Example themes include:
+○​ Defense: RAG-powered Q&A over synthetic defense policy documents.
+○​ Infrastructure: KG-enhanced entity linking for smart city data (traffic, outages).
+○​ Healthcare:
+
+Retrieval
+
+and
+
+summarization
+
+across
+
+multilingual
+
+health
+
+texts
+
+(Arabic/English).
+○​ Education: Semantic search across course materials, linked to curriculum ontologies.​
+(Teams may also propose their own ideas.)
+●​ Hybrid Delivery: A blend of live instruction, self-paced practice, offline labs, and project
+work.
+●​ Competency-Based Outcomes: Each module ends with a deliverable (repo, report,
+presentation) and a defined skills outcome.
+
+Design Principles
+●​ Integrated Pathways: Technical, English, and Soft Skills run in parallel, reinforcing one
+another through shared assignments and project work.
+●​ Task- and Project-Based: Every module closes with an applied deliverable — from
+GitHub repos to essays to presentations.
+●​ Scaffolded Progression: Learners move step by step from foundations to advanced
+deployment, with English and soft skills layered throughout.
+●​ Active Practice: Emphasis on group work, role plays, peer feedback, and workplace-like
+scenarios.
+●​ Capstone-Driven: All strands converge in the Capstone, where learners demonstrate the
+full stack of skills.
+
+Integrated Soft Skills Competencies
+In addition to the training workshops, soft skills are embedded in daily practice. Learners apply
+professional behaviors as part of their technical and English training:
+●​ Critical Thinking & Problem-Solving: debugging, evaluating trade-offs between AI
+models, and analyzing AI readings to form evidence-based arguments.
+●​ Professional Communication: writing emails, reports, and presentations using correct
+technical and business language.
+●​ Collaboration & Teamwork: working in pairs and groups, using shared GitHub workflows
+and presentations that mimic professional teams.
+●​ Time & Task Management: meeting assignment deadlines, managing multi-track
+deliverables, and working in sprint-like cycles.
+●​ Professional & Ethical Conduct: observing etiquette in shared code repos, citing sources
+properly, and practicing responsible reporting.
+●​ Leadership & Initiative: rotating roles (Project Manager, Documentation Lead, QA) and
+leading discussions or presentations.
+●​ Adaptability & Resilience: handling shifting project requirements, errors, or Q&A under
+pressure.
+●​ Digital Professionalism: building a GitHub portfolio with clean documentation, writing
+LinkedIn summaries in professional English, and practicing digital communication etiquette.
+
+Technical Skills Outline
+Week
+
+Content
+
+Deliverables
+
+Pre-Work: Python Refresh & Setup
+0–00
+
+- Python fundamentals (syntax, functions, Baseline Python fluency
+validated via exercises &
+OOP)
+setup confirmation
+- GitHub, CLI, Jupyter
+- Conda/venv setup, IDE familiarity
+
+Module 1: Dev
+Collaboration
+1
+
+Environment
+
+- Git & branching workflows
+- Conda/venv environments; Docker intro
+- JupyterLab vs IDE workflows
+- Agentic IDEs & coding with AI
+- NumPy, Pandas, Matplotlib
+- Modular coding, reproducibility
+- Unit testing basics
+- PyTorch/TensorFlow essentials
+
+Module 3: Relational Databases &
+SQL
+3
+
+- Data modeling (tables, keys)
+- SQL queries (JOINs, CTEs, windows)
+- Postgres (Docker) & SQLite
+- ETL → Pandas; schema/data checks
+
+Module 4: Descriptive Analytics &
+Visualization
+4
+
+- EDA (distributions, correlations)
+- Hypothesis testing
+- KPI design, cohorting
+- Matplotlib/Seaborn/Plotly viz
+
+Module 5:
+Foundations
+5–6
+
+Predictive
+
+Python, GitHub
+workflows, and
+environments
+
+&
+Reproducible Python
+Collaborative repo with
+envs; Git branching;
+working envs + branching
+IDE/Jupyter proficiency;
+practice
+AI-assisted coding
+
+Module 2: Programming for AI & DS
+2
+
+Skills Outcome
+
+Reusable data pipeline +
+reproducible notebook
+
+Proficiency in data
+analysis & visualization;
+modular code practices;
+ML model basics
+
+SQL analytics pack +
+Python ETL script
+
+Database modeling &
+querying; ETL pipelines;
+integrating SQL with
+Python
+
+Descriptive analytics
+report with KPIs +
+visualizations
+
+EDA proficiency;
+statistical reasoning; data
+storytelling with
+visualizations
+
+Modeling
+
+- Train/val/test splits, CV
+- Logistic/linear regression, regularization
+- Trees, forests
+- Handle imbalance; calibrated probs
+- Precision, recall, PR-AUC, calibration
+
+Evaluate ML models;
+Model comparison table + interpret metrics;
+recommendation memo reproducible workflows;
+communicate trade-offs
+
+Module 6: NLP Foundations
+7–8
+
+- Text preprocessing, multilingual handling
+NER + embeddings
+- spaCy + HF tokenization, NER
+pipeline on domain data
+- Embeddings: word2vec, fastText, GloVe →
+BERT/SBERT
+
+Module 7: Advanced NLP Tasks
+9–10
+
+- Transformer architectures
+- Fine-tuning BERT/RoBERTa/GPT
+- Tasks: classification, sentiment,
+summarization, ASR
+
+QA,
+
+Fine-tuned model +
+evaluation report
+
+Module 8: RAG Systems & Vector
+Retrieval
+11
+
+RAG mini-service
+- Dense vs sparse retrieval (BM25, DPR,
+(retriever + generator)
+hybrid)
+with retriever unit test
+- Weaviate setup + indexing
+- RAG integration with LLMs
+
+Module 9: Knowledge Graphs &
+Semantic Web
+12–13
+
+- KG basics, entity linking, completion
+- Graph Neural Networks intro
+- Neural-symbolic integration
+- Triple stores (Blazegraph, Fuseki)
+- SPARQL, ontology disambiguation
+
+Module 10: Deployment & Scaling I
+14
+
+- FastAPI backend wrapping NLP+RAG+KG
+- Next.js lightweight frontend
+- Dockerize microservices
+
+Module 11: Deployment & Scaling II
+15
+
+- Orchestrate with Docker Compose
+- Monitoring: latency, error, answer quality
+- Automated evaluation scripts
+
+16
+
+Capstone
+
+Advanced NLP pipelines;
+fine-tuning transformers;
+task-specific evaluation
+
+Design retrieval systems;
+integrate retrievers with
+generators; run vector
+DBs
+
+Build/query KGs;
+KG semantic search demo
+integrate NLP outputs;
+(entity linking + reasoning
+neural-symbolic
++ SPARQL)
+reasoning
+
+Dockerized services
+running locally
+
+Deploy backend APIs;
+containerize services;
+connect
+frontend/backend
+
+Multi-service stack with
+monitoring + auto eval
+
+Manage multi-service
+deployments;
+monitor/evaluate AI
+systems
+
+Scoped capstone plan +
+team repo initialized
+
+Frame technical projects;
+plan pipelines;
+collaborative repo setup
+
+Module 12: Capstone Kickoff
+- Problem framing & KPIs
+- Pipeline planning (NLP/RAG/KG)
+- Risk analysis; success criteria
+- Repo setup (README, env, data, roles)
+
+NLP preprocessing;
+embedding
+use/comparison; applied
+NER pipeline
+
+Final integrated system +
+Deliver integrated AI
+- End-to-end pipeline (NLP → RAG → KG → deployment + monitoring system; deploy &
++ executive briefing
+API)
+
+Capstone Project Build & Present
+
+- Multi-service Compose deployment
+- Monitoring dashboard/scripts
+- Executive briefing deck
+
+monitor; communicate
+technical findings
+
+English Language Skills Outline
+Week
+
+Content
+
+Deliverables
+
+Skills Outcomes
+
+0
+
+Prep & Orientation
+
+Diagnostic writing sample; Establish baseline writing & speaking
+discussion: “What is AI?”
+proficiency;
+understand
+course
+structure
+
+1
+
+Academic
+Professional
+Basics
+
+2
+
+Summarizing & Critical Summary of short AI text
+Reading
+(e.g., Demystifying AI, Ch.1)
+
+3
+
+Public
+Foundations
+
+4
+
+Formal Communication Formal email draft (e.g., Write
+I
+inquiry
+to
+a emails
+researcher/company)
+
+5
+
+Professional Writing I
+
+Draft CV
+
+Produce a professional CV tailored
+for AI/tech roles
+
+6
+
+Professional Writing II
+
+Draft Cover Letter
+
+Write persuasive cover letters linking
+skills to AI opportunities
+
+7
+
+Debate Skills I
+
+Debate: “Should AI be Express and defend opinions using
+trusted
+in
+medicine?” evidence
+(based on WIRED article)
+
+8
+
+Midterm Assessment
+
+Written essay + short oral
+presentation (on AI topic
+from readings)
+
+Demonstrate integrated writing &
+speaking skills
+
+9
+
+Interview Skills I
+
+Mock interview role play
+(AI job scenario)
+
+Practice professional
+technical vocabulary
+
+10
+
+Interview Skills II
+
+Follow-up
+interview
+
+& Short personal bio (written
+Writing & oral)
+
+Speaking
+
+Write
+structured
+practice introductions
+
+paragraphs;
+
+Identify main ideas & supporting
+details; concisely summarize
+
+2-min presentation: explain Present technical ideas
+an AI concept from reading practice body language
+
+email
+
+clear,
+
+polite,
+
+clearly;
+
+professional
+
+Q&A
+
+with
+
+after Write concise, professional follow-up
+communication
+
+11
+
+Reading & Discussion I
+
+Group presentation on
+Demystifying AI (Ch.3: AI
+applications)
+
+Analyze technical reading; present
+key ideas
+
+12
+
+Technical Reporting I
+
+Short technical report (500 Structure technical reports; practice
+words) on Interpretable objective style
+Machine Learning (Molnar –
+“Why
+interpretability
+matters”)
+
+13
+
+Reading & Discussion II
+
+Group presentation on MIT
+Tech Review article (AI +
+education/governance)
+
+14
+
+Media Analysis
+
+Listening:
+Dr.
+Omar Take structured notes; analyze
+Hatamleh Talks at Google – spoken English in technical talks
+“A Future with Innovation”
++ written reflection
+
+15
+
+Capstone Prep
+
+Draft final essay/report Apply academic & technical English
+(1,000 words) + rehearse conventions
+presentation
+
+16
+
+Capstone
+
+Integrated with technical
+component
+
+Deliver structured presentation;
+expand thematic vocabulary
+
+Soft Skills Outline
+Week
+
+Content
+
+1
+
+Professional
+Embedded
+Communication
+& assignments
+Teamwork
+projects
+• Active listening, clear
+communication
+•
+Team
+roles
+&
+collaboration styles
+• Giving & receiving
+feedback
+
+2
+
+Presentation & Storytelling 3-min individual presentation Deliver structured, confident
+Skills
+(AI/tech topic)
+presentations
+adapted
+to
+• Structuring presentations
+audience
+•
+Storytelling
+for
+technical/non-technical
+audiences
+• Confidence & body
+language
+
+3
+
+Time
+&
+Productivity
+Management
+•
+Prioritization
+(Eisenhower
+Matrix,
+Pomodoro Technique)
+• Managing workload in
+projects
+• Digital productivity tools
+
+4
+
+Deliverables
+
+Embedded
+assignments
+projects
+Personal
+(1-page)
+
+Problem-Solving & Critical Embedded
+Thinking
+assignments
+•
+Structured projects
+problem-solving (IDEAL, 5
+Whys)
+• Creativity in solutions
+• Decision-making under
+constraints
+
+Skills Outcomes
+and
+
+throughout Practice
+professional
+capstone communication;
+collaborate
+effectively in teams
+
+throughout Apply
+time-management
+and
+capstone techniques; use tools to stay
+organized
+productivity
+
+plan
+
+throughout Apply critical
+and
+capstone workplace-like
+justify solutions
+
+thinking to
+problems;
+
+5
+
+Professional Readiness:
+Dedicated drills and Mock-up Develop the ability to present
+Preparing a LinkedIn interviews (role-play)
+oneself professionally during
+profile
+interviews and online.
+Interviewing Skills
+
+
