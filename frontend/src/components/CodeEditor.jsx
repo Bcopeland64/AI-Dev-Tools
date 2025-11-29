@@ -1,10 +1,59 @@
+
 import React from 'react';
 import Editor from '@monaco-editor/react';
 
-const CodeEditor = ({ code, onChange, onRun, output }) => {
+const CodeEditor = ({ code, onChange, onRun, output, mode }) => {
     return (
-        <div className="flex flex-col h-full">
-            <div className="flex-1">
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            height: '100%',
+            background: 'var(--color-bg-primary)'
+        }}>
+            {/* Editor Header */}
+            <div style={{
+                padding: 'var(--spacing-md) var(--spacing-lg)',
+                background: 'var(--color-bg-secondary)',
+                borderBottom: '1px solid var(--color-border-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+            }}>
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 'var(--spacing-sm)',
+                    color: 'var(--color-text-secondary)',
+                    fontSize: '0.875rem',
+                    fontWeight: '600'
+                }}>
+                    <span style={{
+                        width: '8px',
+                        height: '8px',
+                        borderRadius: '50%',
+                        background: mode === 'exercise' ? 'var(--color-accent-secondary)' : 'var(--color-accent-success)',
+                        boxShadow: `0 0 8px ${mode === 'exercise' ? 'var(--color-accent-secondary)' : 'var(--color-accent-success)'} `
+                    }}></span>
+                    {mode === 'exercise' ? 'Challenge Editor' : 'Python Editor'}
+                </div>
+                <button
+                    onClick={onRun}
+                    className={mode === 'exercise' ? 'btn-accent' : 'btn-success'}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 'var(--spacing-sm)',
+                        fontSize: '0.875rem',
+                        padding: 'var(--spacing-sm) var(--spacing-lg)'
+                    }}
+                >
+                    <span>{mode === 'exercise' ? '🚀' : '▶'}</span>
+                    {mode === 'exercise' ? 'Submit Answer' : 'Run Code'}
+                </button>
+            </div>
+
+            {/* Monaco Editor */}
+            <div style={{ flex: '1 1 60%', minHeight: 0 }}>
                 <Editor
                     height="100%"
                     defaultLanguage="python"
@@ -14,21 +63,88 @@ const CodeEditor = ({ code, onChange, onRun, output }) => {
                     options={{
                         minimap: { enabled: false },
                         fontSize: 14,
+                        fontFamily: 'var(--font-mono)',
                         scrollBeyondLastLine: false,
+                        lineNumbers: 'on',
+                        renderLineHighlight: 'all',
+                        cursorBlinking: 'smooth',
+                        smoothScrolling: true,
+                        padding: { top: 16, bottom: 16 },
+                        bracketPairColorization: {
+                            enabled: true
+                        }
                     }}
                 />
             </div>
-            <div className="h-1/3 bg-black text-green-400 p-4 font-mono overflow-y-auto border-t border-gray-700 flex flex-col">
-                <div className="flex justify-between items-center mb-2 shrink-0">
-                    <span className="text-gray-500 text-sm">Output Terminal</span>
-                    <button
-                        onClick={onRun}
-                        className="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded text-sm font-bold transition-colors"
-                    >
-                        Run Code ▶
-                    </button>
+
+            {/* Output Terminal */}
+            <div style={{
+                flex: '0 0 40%',
+                background: '#0a0e14',
+                borderTop: '1px solid var(--color-border-primary)',
+                display: 'flex',
+                flexDirection: 'column',
+                overflow: 'hidden'
+            }}>
+                {/* Terminal Header */}
+                <div style={{
+                    padding: 'var(--spacing-sm) var(--spacing-lg)',
+                    background: 'rgba(16, 20, 25, 0.8)',
+                    borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 'var(--spacing-md)',
+                    fontSize: '0.75rem',
+                    fontWeight: '600',
+                    color: 'var(--color-text-tertiary)'
+                }}>
+                    <div style={{ display: 'flex', gap: '6px' }}>
+                        <span style={{
+                            width: '10px',
+                            height: '10px',
+                            borderRadius: '50%',
+                            background: '#ff5f56'
+                        }}></span>
+                        <span style={{
+                            width: '10px',
+                            height: '10px',
+                            borderRadius: '50%',
+                            background: '#ffbd2e'
+                        }}></span>
+                        <span style={{
+                            width: '10px',
+                            height: '10px',
+                            borderRadius: '50%',
+                            background: '#27c93f'
+                        }}></span>
+                    </div>
+                    <span style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                        Output Terminal
+                    </span>
                 </div>
-                <pre className="whitespace-pre-wrap flex-1 overflow-auto font-mono text-sm">{output || 'Ready to run...'}</pre>
+
+                {/* Terminal Content */}
+                <div style={{
+                    flex: 1,
+                    padding: 'var(--spacing-lg)',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '0.875rem',
+                    color: '#00ff9f',
+                    overflowY: 'auto',
+                    lineHeight: '1.6'
+                }}>
+                    <pre style={{
+                        margin: 0,
+                        whiteSpace: 'pre-wrap',
+                        wordBreak: 'break-word'
+                    }}>
+                        {output || (
+                            <span style={{ color: 'var(--color-text-tertiary)', fontStyle: 'italic' }}>
+                                Ready to execute... Click "Run Code" to see output here.
+                            </span>
+                        )}
+                    </pre>
+                </div>
             </div>
         </div>
     );

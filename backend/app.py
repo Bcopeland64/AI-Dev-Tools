@@ -1,8 +1,6 @@
-import json
-import os
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from executor import execute_code
+from executor import execute_code, validate_exercise
 
 app = Flask(__name__)
 CORS(app)
@@ -31,5 +29,17 @@ def run_code():
     result = execute_code(code)
     return jsonify(result)
 
+@app.route('/api/validate', methods=['POST'])
+def validate_code():
+    data = request.json
+    code = data.get('code', '')
+    test_cases = data.get('testCases', [])
+    
+    if not code:
+        return jsonify({"success": False, "message": "No code provided"}), 400
+
+    result = validate_exercise(code, test_cases)
+    return jsonify(result)
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000, threaded=True, use_reloader=False)

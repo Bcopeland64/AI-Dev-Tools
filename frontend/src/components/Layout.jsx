@@ -2,21 +2,57 @@ import React from 'react';
 
 const Layout = ({ left, middle, right }) => {
   return (
-    <div className="grid grid-cols-12 h-screen bg-gray-900 text-white font-sans">
-      <div className="col-span-2 border-r border-gray-700 flex flex-col">
-        <div className="p-4 border-b border-gray-700 font-bold text-xl text-blue-400">PyTutor</div>
-        <div className="flex-1 overflow-y-auto p-2">
-          {left}
+    <div className="app-container">
+      {/* Header */}
+      <header className="app-header">
+        <div className="app-logo">
+          <div className="app-logo-icon">🐍</div>
+          <span>PyTutor</span>
         </div>
-      </div>
-      <div className="col-span-7 border-r border-gray-700 flex flex-col">
-        {middle}
-      </div>
-      <div className="col-span-3 flex flex-col bg-gray-800">
-        <div className="p-4 border-b border-gray-700 font-bold text-lg text-yellow-400">Hints & Guide</div>
-        <div className="flex-1 overflow-y-auto p-4">
-          {right}
-        </div>
+        <nav className="app-nav">
+          <a href="#" className="nav-link active">Learn</a>
+          <a href="#" className="nav-link">Practice</a>
+          <a href="#" className="nav-link">Progress</a>
+        </nav>
+      </header>
+
+      {/* Main Content Grid */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '280px 1fr 320px',
+        height: 'calc(100vh - 65px)',
+        overflow: 'hidden'
+      }}>
+        {/* Left Sidebar - Navigation */}
+        <aside className="sidebar">
+          <div className="sidebar-header">
+            <h2 className="sidebar-title">Curriculum</h2>
+          </div>
+          <div className="sidebar-content">
+            {left}
+          </div>
+        </aside>
+
+        {/* Middle - Code Editor */}
+        <main style={{
+          background: 'var(--color-bg-primary)',
+          borderRight: '1px solid var(--color-border-primary)',
+          display: 'flex',
+          flexDirection: 'column',
+          overflow: 'hidden'
+        }}>
+          {middle}
+        </main>
+
+        {/* Right Sidebar - Hints */}
+        <aside className="hints-panel">
+          <div className="hints-header">
+            <h2 className="hints-title">💡 Hints & Guide</h2>
+          </div>
+          <div className="hints-content">
+            {right}
+          </div>
+        </aside>
       </div>
     </div>
   );

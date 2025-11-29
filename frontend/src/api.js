@@ -11,3 +11,8 @@ export const runCode = async (code) => {
     const response = await axios.post(`${API_URL}/run`, { code });
     return response.data;
 };
+
+export const validateCode = async (code, testCases) => {
+    const response = await axios.post(`${API_URL}/validate`, { code, testCases });
+    return response.data;
+};

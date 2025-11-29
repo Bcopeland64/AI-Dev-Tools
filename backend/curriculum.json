@@ -3,228 +3,336 @@
     {
       "id": "b1",
       "title": "Hello World",
-      "content": "Welcome to Python! The print function is used to output text to the console. In Python, strings (text) must be enclosed in single (') or double (\") quotes.",
-      "example": "print('Hello, World!')",
-      "hints": [
-        "Use the print() function.",
-        "Make sure your text is inside quotes.",
-        "Python is case-sensitive."
-      ]
+      "explanation": "Welcome to Python! The `print()` function is the most fundamental way to display output in Python. It takes one or more arguments and displays them on the screen. Strings (text) must be enclosed in either single quotes (') or double quotes (\").",
+      "example": "# This is a simple print statement\nprint('Hello, World!')\n\n# You can also use double quotes\nprint(\"Python is awesome!\")\n\n# Print multiple items separated by spaces\nprint('Hello', 'Python', 'World')",
+      "exercise": {
+        "instruction": "Write a program that prints 'Welcome to Python!' to the console.",
+        "starterCode": "# Write your code below\n",
+        "solution": "print('Welcome to Python!')",
+        "hints": [
+          "Use the print() function",
+          "Put your text inside quotes",
+          "Make sure the text matches exactly: 'Welcome to Python!'"
+        ],
+        "testCases": [
+          {
+            "description": "Should print the welcome message",
+            "expectedOutput": "Welcome to Python!\n"
+          }
+        ]
+      }
     },
     {
       "id": "b2",
-      "title": "Variables",
-      "content": "Variables are containers for storing data values. Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.",
-      "example": "x = 5\ny = 'John'\nprint(x)\nprint(y)",
-      "hints": [
-        "Use '=' to assign values.",
-        "Variable names are case-sensitive."
-      ]
+      "title": "Variables and Assignment",
+      "explanation": "Variables are containers for storing data values. In Python, you don't need to declare a variable's type - it's automatically determined when you assign a value. Use the equals sign (=) to assign values to variables. Variable names should be descriptive and follow these rules: start with a letter or underscore, contain only letters, numbers, and underscores, and are case-sensitive.",
+      "example": "# Creating variables\nname = 'Alice'\nage = 25\nheight = 5.6\nis_student = True\n\n# Printing variables\nprint(name)\nprint(age)\nprint(height)\nprint(is_student)\n\n# You can change variable values\nage = 26\nprint(age)",
+      "exercise": {
+        "instruction": "Create a variable called `message` with the value 'Python is fun!' and print it.",
+        "starterCode": "# Create the variable and print it\n",
+        "solution": "message = 'Python is fun!'\nprint(message)",
+        "hints": [
+          "Use the = operator to assign a value",
+          "Variable name should be 'message'",
+          "Don't forget to print the variable"
+        ],
+        "testCases": [
+          {
+            "description": "Should print the message",
+            "expectedOutput": "Python is fun!\n"
+          }
+        ]
+      }
     },
     {
       "id": "b3",
-      "title": "Data Types",
-      "content": "Python has built-in data types like integers, floats, strings, and booleans. You can check the type of a variable using the type() function.",
-      "example": "x = 5\ny = 3.14\nz = 'Hello'\nprint(type(x))\nprint(type(y))\nprint(type(z))",
-      "hints": [
-        "int is for whole numbers.",
-        "float is for decimal numbers.",
-        "str is for text."
-      ]
+      "title": "Basic Math Operations",
+      "explanation": "Python supports all basic mathematical operations: addition (+), subtraction (-), multiplication (*), division (/), floor division (//), modulus (%), and exponentiation (**). You can perform calculations directly or store results in variables.",
+      "example": "# Basic arithmetic\nprint(10 + 5)   # Addition: 15\nprint(10 - 5)   # Subtraction: 5\nprint(10 * 5)   # Multiplication: 50\nprint(10 / 5)   # Division: 2.0\nprint(10 // 3)  # Floor division: 3\nprint(10 % 3)   # Modulus: 1\nprint(2 ** 3)   # Exponentiation: 8\n\n# Using variables\nx = 15\ny = 4\nresult = x + y\nprint(result)",
+      "exercise": {
+        "instruction": "Calculate the sum of 42 and 58, store it in a variable called `total`, and print the result.",
+        "starterCode": "# Calculate and print the sum\n",
+        "solution": "total = 42 + 58\nprint(total)",
+        "hints": [
+          "Use the + operator for addition",
+          "Store the result in a variable named 'total'",
+          "Print the total variable"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 100",
+            "expectedOutput": "100\n"
+          }
+        ]
+      }
     },
     {
       "id": "b4",
-      "title": "If...Else",
-      "content": "Python supports logical conditions from mathematics. These can be used in 'if' statements.",
-      "example": "a = 33\nb = 200\nif b > a:\n  print('b is greater than a')",
-      "hints": [
-        "Indentation is crucial in Python.",
-        "Use ':' at the end of the if statement."
-      ]
+      "title": "String Concatenation",
+      "explanation": "Strings can be combined (concatenated) using the + operator. You can also repeat strings using the * operator. When combining strings with numbers, you must convert the numbers to strings using str().",
+      "example": "# String concatenation\nfirst_name = 'John'\nlast_name = 'Doe'\nfull_name = first_name + ' ' + last_name\nprint(full_name)\n\n# String repetition\nprint('Ha' * 3)  # HaHaHa\n\n# Combining strings and numbers\nage = 30\nmessage = 'I am ' + str(age) + ' years old'\nprint(message)",
+      "exercise": {
+        "instruction": "Create two variables: `greeting` with value 'Hello' and `name` with value 'World'. Combine them with a space in between and print the result.",
+        "starterCode": "# Create variables and combine them\n",
+        "solution": "greeting = 'Hello'\nname = 'World'\nprint(greeting + ' ' + name)",
+        "hints": [
+          "Use the + operator to concatenate strings",
+          "Don't forget to add a space between the words",
+          "You can concatenate multiple strings: 'Hello' + ' ' + 'World'"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 'Hello World'",
+            "expectedOutput": "Hello World\n"
+          }
+        ]
+      }
     },
     {
       "id": "b5",
-      "title": "While Loops",
-      "content": "With the while loop we can execute a set of statements as long as a condition is true.",
-      "example": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1",
-      "hints": [
-        "Don't forget to increment the counter, or the loop will run forever!",
-        "Use '+=' for incrementing."
-      ]
+      "title": "If Statements",
+      "explanation": "Conditional statements allow your program to make decisions. The `if` statement executes code only when a condition is True. Python uses indentation (4 spaces or 1 tab) to define code blocks. You can use comparison operators: == (equal), != (not equal), > (greater than), < (less than), >= (greater or equal), <= (less or equal).",
+      "example": "# Simple if statement\nage = 18\nif age >= 18:\n    print('You are an adult')\n\n# If-else statement\ntemperature = 25\nif temperature > 30:\n    print('It is hot')\nelse:\n    print('It is not hot')\n\n# If-elif-else\nscore = 85\nif score >= 90:\n    print('Grade: A')\nelif score >= 80:\n    print('Grade: B')\nelse:\n    print('Grade: C')",
+      "exercise": {
+        "instruction": "Create a variable `number` with value 10. If the number is greater than 5, print 'Big number', otherwise print 'Small number'.",
+        "starterCode": "# Write your if-else statement\n",
+        "solution": "number = 10\nif number > 5:\n    print('Big number')\nelse:\n    print('Small number')",
+        "hints": [
+          "Use the > operator to compare",
+          "Don't forget the colon (:) after the if condition",
+          "Indent the print statement with 4 spaces"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 'Big number' since 10 > 5",
+            "expectedOutput": "Big number\n"
+          }
+        ]
+      }
     }
   ],
   "intermediate": [
     {
       "id": "i1",
       "title": "Lists",
-      "content": "Lists are used to store multiple items in a single variable. Lists are ordered, changeable, and allow duplicate values.",
-      "example": "fruits = ['apple', 'banana', 'cherry']\nprint(fruits[0])\nfruits.append('orange')\nprint(fruits)",
-      "hints": [
-        "Use square brackets [].",
-        "Index starts at 0."
-      ]
+      "explanation": "Lists are ordered, mutable collections that can store multiple items. They are created using square brackets []. Lists can contain different data types and allow duplicate values. You can access items by index (starting at 0), modify items, add items with append(), and remove items with remove().",
+      "example": "# Creating a list\nfruits = ['apple', 'banana', 'cherry']\nprint(fruits)\n\n# Accessing items (index starts at 0)\nprint(fruits[0])  # apple\nprint(fruits[-1]) # cherry (last item)\n\n# Modifying items\nfruits[1] = 'blueberry'\nprint(fruits)\n\n# Adding items\nfruits.append('orange')\nprint(fruits)\n\n# List length\nprint(len(fruits))",
+      "exercise": {
+        "instruction": "Create a list called `numbers` containing [1, 2, 3, 4, 5]. Add the number 6 to the end of the list using append(), then print the entire list.",
+        "starterCode": "# Create the list, add 6, and print it\n",
+        "solution": "numbers = [1, 2, 3, 4, 5]\nnumbers.append(6)\nprint(numbers)",
+        "hints": [
+          "Use square brackets [] to create a list",
+          "Use the append() method to add an item",
+          "Print the list to see all elements"
+        ],
+        "testCases": [
+          {
+            "description": "Should print the list with 6 added",
+            "expectedOutput": "[1, 2, 3, 4, 5, 6]\n"
+          }
+        ]
+      }
     },
     {
       "id": "i2",
-      "title": "Dictionaries",
-      "content": "Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered, changeable and does not allow duplicates.",
-      "example": "thisdict = {\n  'brand': 'Ford',\n  'model': 'Mustang',\n  'year': 1964\n}\nprint(thisdict['brand'])",
-      "hints": [
-        "Use curly braces {}.",
-        "Access items by key name."
-      ]
+      "title": "For Loops",
+      "explanation": "For loops allow you to iterate over sequences (like lists, strings, or ranges). The loop variable takes each value in the sequence one at a time. The range() function generates a sequence of numbers and is commonly used with for loops.",
+      "example": "# Loop through a list\nfruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)\n\n# Loop through a range\nfor i in range(5):\n    print(i)  # Prints 0, 1, 2, 3, 4\n\n# Loop with range(start, stop)\nfor i in range(1, 6):\n    print(i)  # Prints 1, 2, 3, 4, 5",
+      "exercise": {
+        "instruction": "Use a for loop to print each number from 1 to 5 (inclusive). Use the range() function.",
+        "starterCode": "# Write your for loop here\n",
+        "solution": "for i in range(1, 6):\n    print(i)",
+        "hints": [
+          "Use range(1, 6) to get numbers 1 through 5",
+          "Remember: range(start, stop) goes up to but not including stop",
+          "Don't forget the colon and indentation"
+        ],
+        "testCases": [
+          {
+            "description": "Should print numbers 1 through 5",
+            "expectedOutput": "1\n2\n3\n4\n5\n"
+          }
+        ]
+      }
     },
     {
       "id": "i3",
+      "title": "Dictionaries",
+      "explanation": "Dictionaries store data in key-value pairs. They are created using curly braces {} with keys and values separated by colons. Dictionaries are unordered, mutable, and don't allow duplicate keys. Access values using square brackets with the key name.",
+      "example": "# Creating a dictionary\nperson = {\n    'name': 'Alice',\n    'age': 30,\n    'city': 'New York'\n}\n\n# Accessing values\nprint(person['name'])\nprint(person['age'])\n\n# Adding new key-value pairs\nperson['job'] = 'Engineer'\nprint(person)\n\n# Modifying values\nperson['age'] = 31\nprint(person['age'])",
+      "exercise": {
+        "instruction": "Create a dictionary called `car` with keys 'brand', 'model', and 'year' with values 'Toyota', 'Camry', and 2020 respectively. Print the brand.",
+        "starterCode": "# Create the dictionary and print the brand\n",
+        "solution": "car = {\n    'brand': 'Toyota',\n    'model': 'Camry',\n    'year': 2020\n}\nprint(car['brand'])",
+        "hints": [
+          "Use curly braces {} to create a dictionary",
+          "Format: {'key': 'value', 'key2': 'value2'}",
+          "Access values with dictionary_name['key']"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 'Toyota'",
+            "expectedOutput": "Toyota\n"
+          }
+        ]
+      }
+    },
+    {
+      "id": "i4",
       "title": "Functions",
-      "content": "A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function.",
-      "example": "def my_function(fname):\n  print(fname + ' Refsnes')\n\nmy_function('Emil')",
-      "hints": [
-        "Use 'def' keyword.",
-        "Indentation defines the function body."
-      ]
+      "explanation": "Functions are reusable blocks of code that perform specific tasks. They are defined using the `def` keyword, followed by the function name and parentheses. Functions can accept parameters (inputs) and return values using the `return` keyword. This promotes code reusability and organization.",
+      "example": "# Simple function\ndef greet():\n    print('Hello!')\n\ngreet()  # Call the function\n\n# Function with parameters\ndef greet_person(name):\n    print('Hello, ' + name + '!')\n\ngreet_person('Alice')\n\n# Function with return value\ndef add(a, b):\n    return a + b\n\nresult = add(5, 3)\nprint(result)",
+      "exercise": {
+        "instruction": "Create a function called `multiply` that takes two parameters and returns their product. Call the function with arguments 6 and 7, and print the result.",
+        "starterCode": "# Define the function and call it\n",
+        "solution": "def multiply(a, b):\n    return a * b\n\nresult = multiply(6, 7)\nprint(result)",
+        "hints": [
+          "Use 'def' to define a function",
+          "Use 'return' to send back a value",
+          "Call the function with multiply(6, 7)"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 42 (6 * 7)",
+            "expectedOutput": "42\n"
+          }
+        ]
+      }
+    },
+    {
+      "id": "i5",
+      "title": "List Comprehensions",
+      "explanation": "List comprehensions provide a concise way to create lists. They consist of brackets containing an expression followed by a for clause, and optionally if clauses. This is more Pythonic and often faster than using traditional for loops to build lists.",
+      "example": "# Traditional way\nsquares = []\nfor i in range(5):\n    squares.append(i ** 2)\nprint(squares)\n\n# List comprehension way\nsquares = [i ** 2 for i in range(5)]\nprint(squares)\n\n# With condition\neven_numbers = [i for i in range(10) if i % 2 == 0]\nprint(even_numbers)\n\n# Transform strings\nfruits = ['apple', 'banana', 'cherry']\nupper_fruits = [fruit.upper() for fruit in fruits]\nprint(upper_fruits)",
+      "exercise": {
+        "instruction": "Use a list comprehension to create a list of numbers from 1 to 10 (inclusive) that are divisible by 3. Print the resulting list.",
+        "starterCode": "# Write your list comprehension here\n",
+        "solution": "numbers = [i for i in range(1, 11) if i % 3 == 0]\nprint(numbers)",
+        "hints": [
+          "Use range(1, 11) for numbers 1 to 10",
+          "Use the modulus operator % to check divisibility",
+          "Format: [expression for item in iterable if condition]"
+        ],
+        "testCases": [
+          {
+            "description": "Should print [3, 6, 9]",
+            "expectedOutput": "[3, 6, 9]\n"
+          }
+        ]
+      }
     }
   ],
   "advanced": [
     {
       "id": "a1",
-      "title": "List Comprehensions",
-      "content": "List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.",
-      "example": "fruits = ['apple', 'banana', 'cherry', 'kiwi', 'mango']\nnewlist = [x for x in fruits if 'a' in x]\nprint(newlist)",
-      "hints": [
-        "Syntax: [expression for item in iterable if condition]",
-        "More pythonic than loops."
-      ]
+      "title": "Lambda Functions",
+      "explanation": "Lambda functions are small, anonymous functions defined using the `lambda` keyword. They can have any number of parameters but only one expression. Lambda functions are useful for short operations that are used once or passed as arguments to higher-order functions like map(), filter(), and sorted().",
+      "example": "# Regular function\ndef square(x):\n    return x ** 2\n\nprint(square(5))\n\n# Lambda equivalent\nsquare = lambda x: x ** 2\nprint(square(5))\n\n# Lambda with multiple parameters\nadd = lambda a, b: a + b\nprint(add(3, 4))\n\n# Using lambda with map()\nnumbers = [1, 2, 3, 4, 5]\nsquared = list(map(lambda x: x ** 2, numbers))\nprint(squared)",
+      "exercise": {
+        "instruction": "Create a lambda function that takes a number and returns its cube (number raised to power 3). Assign it to a variable called `cube` and use it to print the cube of 4.",
+        "starterCode": "# Create lambda function and use it\n",
+        "solution": "cube = lambda x: x ** 3\nprint(cube(4))",
+        "hints": [
+          "Use the lambda keyword",
+          "Format: lambda parameter: expression",
+          "Use ** 3 for cubing"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 64 (4^3)",
+            "expectedOutput": "64\n"
+          }
+        ]
+      }
     },
     {
       "id": "a2",
-      "title": "Lambda Functions",
-      "content": "A lambda function is a small anonymous function. A lambda function can take any number of arguments, but can only have one expression.",
-      "example": "x = lambda a : a + 10\nprint(x(5))",
-      "hints": [
-        "Use 'lambda' keyword.",
-        "Useful for short, throwaway functions."
-      ]
+      "title": "Classes and Objects",
+      "explanation": "Classes are blueprints for creating objects. They encapsulate data (attributes) and behavior (methods). The `__init__()` method is a constructor that initializes object attributes. The `self` parameter refers to the instance of the class and is used to access attributes and methods.",
+      "example": "# Define a class\nclass Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def bark(self):\n        return f'{self.name} says Woof!'\n    \n    def get_age(self):\n        return f'{self.name} is {self.age} years old'\n\n# Create objects\ndog1 = Dog('Buddy', 3)\ndog2 = Dog('Max', 5)\n\nprint(dog1.bark())\nprint(dog2.get_age())",
+      "exercise": {
+        "instruction": "Create a class called `Person` with an `__init__` method that takes `name` and `age` parameters. Add a method called `introduce` that returns 'My name is [name]'. Create an instance with name 'John' and age 25, then print the result of calling introduce().",
+        "starterCode": "# Define the Person class and use it\n",
+        "solution": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def introduce(self):\n        return f'My name is {self.name}'\n\nperson = Person('John', 25)\nprint(person.introduce())",
+        "hints": [
+          "Use 'class' keyword to define a class",
+          "Don't forget 'self' as the first parameter",
+          "Use f-strings for formatting: f'My name is {self.name}'"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 'My name is John'",
+            "expectedOutput": "My name is John\n"
+          }
+        ]
+      }
     },
     {
       "id": "a3",
-      "title": "Classes and Objects",
-      "content": "Python is an object oriented programming language. Almost everything in Python is an object, with its properties and methods.",
-      "example": "class Person:\n  def __init__(self, name, age):\n    self.name = name\n    self.age = age\n\np1 = Person('John', 36)\nprint(p1.name)",
-      "hints": [
-        "Use 'class' keyword.",
-        "__init__ is the constructor."
-      ]
-    }
-  ],
-  "data_science": [
-    {
-      "id": "ds1",
-      "title": "NumPy Basics",
-      "content": "NumPy is the fundamental package for scientific computing in Python. It provides support for arrays, matrices, and high-level mathematical functions.",
-      "example": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr)\nprint(arr.mean())",
-      "hints": [
-        "Import numpy as np.",
-        "Use np.array() to create arrays."
-      ]
+      "title": "Exception Handling",
+      "explanation": "Exception handling allows you to gracefully handle errors in your code. The try block contains code that might raise an exception. The except block catches and handles the exception. You can catch specific exceptions or use a general except clause. The finally block always executes, regardless of whether an exception occurred.",
+      "example": "# Basic try-except\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')\n\n# Multiple exceptions\ntry:\n    number = int('abc')\nexcept ValueError:\n    print('Invalid number format')\nexcept Exception as e:\n    print(f'An error occurred: {e}')\n\n# Try-except-finally\ntry:\n    file = open('test.txt', 'r')\nexcept FileNotFoundError:\n    print('File not found')\nfinally:\n    print('Cleanup complete')",
+      "exercise": {
+        "instruction": "Write a try-except block that attempts to convert the string '123abc' to an integer using int(). If a ValueError occurs, print 'Conversion failed'.",
+        "starterCode": "# Write your try-except block\n",
+        "solution": "try:\n    number = int('123abc')\nexcept ValueError:\n    print('Conversion failed')",
+        "hints": [
+          "Use try: and except ValueError:",
+          "Call int('123abc') in the try block",
+          "Print the error message in the except block"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 'Conversion failed'",
+            "expectedOutput": "Conversion failed\n"
+          }
+        ]
+      }
     },
     {
-      "id": "ds2",
-      "title": "Pandas DataFrames",
-      "content": "Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool.",
-      "example": "import pandas as pd\ndata = {'Name': ['Tom', 'Jerry'], 'Age': [20, 21]}\ndf = pd.DataFrame(data)\nprint(df)",
-      "hints": [
-        "Import pandas as pd.",
-        "DataFrame is the main data structure."
-      ]
+      "id": "a4",
+      "title": "Decorators",
+      "explanation": "Decorators are a powerful feature that allows you to modify or enhance functions without changing their source code. A decorator is a function that takes another function as an argument and returns a new function. They are commonly used for logging, timing, authentication, and caching.",
+      "example": "# Simple decorator\ndef uppercase_decorator(func):\n    def wrapper():\n        result = func()\n        return result.upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return 'hello, world'\n\nprint(greet())  # HELLO, WORLD\n\n# Decorator with arguments\ndef repeat(times):\n    def decorator(func):\n        def wrapper(*args, **kwargs):\n            for _ in range(times):\n                func(*args, **kwargs)\n        return wrapper\n    return decorator\n\n@repeat(3)\ndef say_hello():\n    print('Hello!')\n\nsay_hello()",
+      "exercise": {
+        "instruction": "Create a decorator called `double_result` that doubles the return value of a function. Apply it to a function called `get_number` that returns 5. Print the result.",
+        "starterCode": "# Create decorator and apply it\n",
+        "solution": "def double_result(func):\n    def wrapper():\n        return func() * 2\n    return wrapper\n\n@double_result\ndef get_number():\n    return 5\n\nprint(get_number())",
+        "hints": [
+          "The decorator takes a function as a parameter",
+          "The wrapper function calls the original function and modifies the result",
+          "Use @decorator_name above the function definition"
+        ],
+        "testCases": [
+          {
+            "description": "Should print 10 (5 * 2)",
+            "expectedOutput": "10\n"
+          }
+        ]
+      }
     },
     {
-      "id": "ds3",
-      "title": "Matplotlib Visualization",
-      "content": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.",
-      "example": "import matplotlib.pyplot as plt\nimport numpy as np\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\nprint('Plotting sin(x)... (Visualization not supported in text output)')",
-      "hints": [
-        "Import matplotlib.pyplot as plt.",
-        "Use plt.plot() to draw."
-      ]
-    }
-  ],
-  "machine_learning": [
-    {
-      "id": "ml1",
-      "title": "Linear Regression",
-      "content": "Linear Regression is a basic predictive analytics technique. It attempts to model the relationship between two variables by fitting a linear equation.",
-      "example": "from sklearn.linear_model import LinearRegression\nimport numpy as np\nX = np.array([[1], [2], [3], [4]])\ny = np.array([2, 4, 6, 8])\nmodel = LinearRegression()\nmodel.fit(X, y)\nprint(model.predict([[5]]))",
-      "hints": [
-        "Use sklearn.linear_model.",
-        "Reshape data if needed."
-      ]
-    },
-    {
-      "id": "ml2",
-      "title": "Model Evaluation",
-      "content": "Evaluating your model is crucial. Common metrics include Mean Squared Error (MSE) for regression and Accuracy for classification.",
-      "example": "from sklearn.metrics import mean_squared_error\ny_true = [3, -0.5, 2, 7]\ny_pred = [2.5, 0.0, 2, 8]\nprint(mean_squared_error(y_true, y_pred))",
-      "hints": [
-        "Use sklearn.metrics.",
-        "Lower MSE is better."
-      ]
-    }
-  ],
-  "nlp": [
-    {
-      "id": "nlp1",
-      "title": "Tokenization with spaCy",
-      "content": "Tokenization is the task of chopping it up into pieces, called tokens, perhaps at the same time throwing away certain characters, such as punctuation.",
-      "example": "import spacy\n# Note: Requires 'en_core_web_sm' model installed\n# nlp = spacy.load('en_core_web_sm')\nprint('spaCy installed. Load model to tokenize.')",
-      "hints": [
-        "Install spacy model first.",
-        "Use nlp() on text."
-      ]
-    },
-    {
-      "id": "nlp2",
-      "title": "Transformers",
-      "content": "Transformers are the state-of-the-art architecture for NLP. The 'transformers' library by Hugging Face provides easy access to these models.",
-      "example": "from transformers import pipeline\nprint('Transformers library imported successfully.')",
-      "hints": [
-        "Use pipeline() for high-level tasks.",
-        "Models can be large to download."
-      ]
-    }
-  ],
-  "advanced_ai": [
-    {
-      "id": "ai1",
-      "title": "RAG Systems",
-      "content": "Retrieval-Augmented Generation (RAG) combines an information retrieval component with a text generator model.",
-      "example": "print('RAG involves retrieving documents and passing them to an LLM.')",
-      "hints": [
-        "Combine retrieval with generation.",
-        "Use vector databases."
-      ]
-    },
-    {
-      "id": "ai2",
-      "title": "Knowledge Graphs",
-      "content": "A Knowledge Graph represents a network of real-world entities—i.e. objects, events, situations, or concepts—and illustrates the relationship between them.",
-      "example": "import networkx as nx\nG = nx.Graph()\nG.add_edge('Paris', 'France')\nprint(G.edges())",
-      "hints": [
-        "Nodes represent entities.",
-        "Edges represent relationships."
-      ]
-    }
-  ],
-  "deployment": [
-    {
-      "id": "dep1",
-      "title": "FastAPI",
-      "content": "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.",
-      "example": "from fastapi import FastAPI\napp = FastAPI()\nprint('FastAPI app created.')",
-      "hints": [
-        "Use decorators like @app.get().",
-        "Run with uvicorn."
-      ]
+      "id": "a5",
+      "title": "Generators",
+      "explanation": "Generators are functions that return an iterator using the `yield` keyword instead of `return`. They generate values on-the-fly and are memory efficient for large datasets. Each time `yield` is called, the function's state is saved, and execution resumes from that point on the next call.",
+      "example": "# Simple generator\ndef count_up_to(n):\n    count = 1\n    while count <= n:\n        yield count\n        count += 1\n\n# Using the generator\nfor num in count_up_to(5):\n    print(num)\n\n# Generator expression\nsquares = (x ** 2 for x in range(5))\nfor square in squares:\n    print(square)\n\n# Fibonacci generator\ndef fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\nfor num in fibonacci(7):\n    print(num)",
+      "exercise": {
+        "instruction": "Create a generator function called `even_numbers` that yields even numbers from 2 to 10 (inclusive). Use a for loop to print each number from the generator.",
+        "starterCode": "# Create generator and use it\n",
+        "solution": "def even_numbers():\n    for i in range(2, 11, 2):\n        yield i\n\nfor num in even_numbers():\n    print(num)",
+        "hints": [
+          "Use 'yield' instead of 'return'",
+          "Use range(2, 11, 2) to get even numbers",
+          "Loop through the generator with a for loop"
+        ],
+        "testCases": [
+          {
+            "description": "Should print even numbers 2, 4, 6, 8, 10",
+            "expectedOutput": "2\n4\n6\n8\n10\n"
+          }
+        ]
+      }
     }
   ]
 }
